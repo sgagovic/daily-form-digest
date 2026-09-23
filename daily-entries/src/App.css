@@ -1,0 +1,83 @@
+.form-page {
+  width: 100%;
+  max-width: 560px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+.form-page h1 {
+  margin: 0 0 24px;
+  font-size: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #d5dce6;
+  border-radius: 12px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-weight: 600;
+}
+
+.field-error {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.875rem;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  color: inherit;
+  background: white;
+  border: 1px solid #7b8798;
+  border-radius: 6px;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  color: white;
+  background: #185adb;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #1246ab;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible,
+.contact-form button:focus-visible {
+  outline: 3px solid #185adb;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .form-page {
+    margin: 16px auto;
+    padding: 16px;
+  }
+
+  .contact-form {
+    padding: 16px;
+  }
+}

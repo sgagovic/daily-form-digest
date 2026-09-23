@@ -1,0 +1,14 @@
+services:
+  website-1:
+    image: nginx:stable-alpine
+    ports:
+      - "127.0.0.1:8081:80"
+    volumes:
+      - ./website-1:/usr/share/nginx/html:ro
+
+  website-2:
+    image: nginx:stable-alpine
+    ports:
+      - "127.0.0.1:8082:80"
+    volumes:
+      - ./website-2:/usr/share/nginx/html:ro
